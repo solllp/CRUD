@@ -76,6 +76,14 @@ Ejecutar comandos de Laravel:
 ```
 
 ## Nota
+git clone https://github.com/solllp/CRUD.git
+cd CRUD
+composer install
+cp .env.example .env
+php artisan key:generate
+./vendor/bin/sail up -d --build
+./vendor/bin/sail artisan migrate --seed
+
 
 No se suben al repositorio los archivos `.env` ni la carpeta `vendor/`.
 Cada computadora debe crear su propio `.env` desde `.env.example` e instalar dependencias con `composer install`.

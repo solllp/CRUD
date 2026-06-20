@@ -248,7 +248,7 @@ CREATE TABLE `productos` (
   PRIMARY KEY (`id`),
   KEY `productos_categoria_id_foreign` (`categoria_id`),
   CONSTRAINT `productos_categoria_id_foreign` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -257,7 +257,7 @@ CREATE TABLE `productos` (
 
 LOCK TABLES `productos` WRITE;
 /*!40000 ALTER TABLE `productos` DISABLE KEYS */;
-INSERT INTO `productos` VALUES (1,'Laptop Gamer',15000.00,5,1,'2026-06-08 04:57:05','2026-06-08 04:57:05'),(2,'Mouse Logitech',500.00,20,1,'2026-06-08 04:57:05','2026-06-08 04:57:05'),(3,'Mesa',2500.00,10,2,'2026-06-08 04:57:05','2026-06-08 04:57:05'),(4,'alexis',20.00,20,1,'2026-06-20 22:18:41','2026-06-20 22:18:41');
+INSERT INTO `productos` VALUES (1,'Laptop Gamer',15000.00,5,1,'2026-06-08 04:57:05','2026-06-08 04:57:05'),(2,'Mouse Logitech',500.00,20,1,'2026-06-08 04:57:05','2026-06-08 04:57:05'),(3,'Mesa',2500.00,10,2,'2026-06-08 04:57:05','2026-06-08 04:57:05'),(4,'alexis',20.00,20,1,'2026-06-20 22:18:41','2026-06-20 22:18:41'),(5,'oa',45.00,1,1,'2026-06-20 22:34:15','2026-06-20 22:34:15');
 /*!40000 ALTER TABLE `productos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -287,7 +287,7 @@ CREATE TABLE `sessions` (
 
 LOCK TABLES `sessions` WRITE;
 /*!40000 ALTER TABLE `sessions` DISABLE KEYS */;
-INSERT INTO `sessions` VALUES ('369bOavPwF6UsifbUCzJG2tyiKJuq60m3C6vwChW',NULL,'172.18.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.125.1 Chrome/148.0.7778.97 Electron/42.2.0 Safari/537.36','eyJfdG9rZW4iOiJ5SWo0YjBxMmNuUld1cEtDUVBpUk9KVUk4TTRoektZcDJPVlpTUTVFIiwiX3ByZXZpb3VzIjp7InVybCI6Imh0dHA6XC9cLzEyNy4wLjAuMTo4MDAwXC9wcm9kdWN0b3NHdWFyZGFkb3MiLCJyb3V0ZSI6bnVsbH0sIl9mbGFzaCI6eyJvbGQiOltdLCJuZXciOltdfX0=',1781993921);
+INSERT INTO `sessions` VALUES ('369bOavPwF6UsifbUCzJG2tyiKJuq60m3C6vwChW',NULL,'172.18.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.125.1 Chrome/148.0.7778.97 Electron/42.2.0 Safari/537.36','eyJfdG9rZW4iOiJ5SWo0YjBxMmNuUld1cEtDUVBpUk9KVUk4TTRoektZcDJPVlpTUTVFIiwiX3ByZXZpb3VzIjp7InVybCI6Imh0dHA6XC9cLzEyNy4wLjAuMTo4MDAwXC9wcm9kdWN0b3NHdWFyZGFkb3MiLCJyb3V0ZSI6bnVsbH0sIl9mbGFzaCI6eyJvbGQiOltdLCJuZXciOltdfX0=',1781993921),('SDllJnSHRjd6VTDYgZjzvlULRPDcaGv01xW2tDYY',NULL,'172.18.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.125.1 Chrome/148.0.7778.97 Electron/42.2.0 Safari/537.36','eyJfdG9rZW4iOiJDZHJQNUFNSlo5ckl1RFh6YndWRG5LQkV3YUEzVUlTdmg3dU4yMzZZIiwiX3ByZXZpb3VzIjp7InVybCI6Imh0dHA6XC9cLzEyNy4wLjAuMTo4MDAwXC9wcm9kdWN0b3NHdWFyZGFkb3MiLCJyb3V0ZSI6bnVsbH0sIl9mbGFzaCI6eyJvbGQiOltdLCJuZXciOltdfX0=',1781994855);
 /*!40000 ALTER TABLE `sessions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -330,4 +330,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-20 22:20:25
+-- Dump completed on 2026-06-20 22:35:30

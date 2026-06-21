@@ -24,6 +24,20 @@ class ProductoSeeder extends Seeder
         ]);
 
         Producto::create([
+            'nombre' => 'XBOX Series X',
+            'precio' => 3000,
+            'stock' => 15,
+            'categoria_id' => 1
+        ]);
+
+        Producto::create([
+            'nombre' => 'Sofa',
+            'precio' => 1200,
+            'stock' => 8,
+            'categoria_id' => 2
+        ]);
+        
+        Producto::create([
             'nombre' => 'Mesa',
             'precio' => 2500,
             'stock' => 10,

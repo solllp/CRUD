@@ -86,6 +86,7 @@ php artisan key:generate
 
 
 git push origin master
+./vendor/bin/sail mysql laravel < respaldo.sql
 ./vendor/bin/sail exec mysql mysqldump -uroot -p laravel > respaldo.sql
 No se suben al repositorio los archivos `.env` ni la carpeta `vendor/`.
 Cada computadora debe crear su propio `.env` desde `.env.example` e instalar dependencias con `composer install`.
